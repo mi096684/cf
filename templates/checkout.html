@@ -1,0 +1,9 @@
+<form id="redirectForm" method="post" action="https://test.cashfree.com/billpay/checkout/post/submit">
+    {% for key, value in postData.items() %}
+    <input type="hidden" name="{{key}}" value="{{ value }}"/>
+ {% endfor %}
+  
+  </form>
+
+  <script>document.getElementById("redirectForm").submit();</script>
+
